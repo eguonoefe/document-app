@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoleCard Component should match the role card snapshot 1`] = `
+<div>
+  <h5>
+    Book
+  </h5>
+  <p>
+    Awesome
+  </p>
+  <p>
+    Last Edited: 
+    Invalid Date
+  </p>
+  <p />
+  <p />
+  <div
+    className="col l6 m6 s12 left"
+  >
+    <Modal
+      actions={
+        <div>
+          <button
+            className="btn btn-flat modal-action modal-close"
+            id="delete"
+            name={3}
+            onClick={[MockFunction]}
+          >
+            Delete
+          </button>
+          <button
+            className="btn btn-flat modal-action modal-close left"
+          >
+            Cancel
+          </button>
+        </div>
+      }
+      bottomSheet={false}
+      fixedFooter={false}
+      id="modal-1"
+      options={
+        Object {
+          "dismissible": true,
+          "endingTop": "10%",
+          "inDuration": 250,
+          "onCloseEnd": null,
+          "onCloseStart": null,
+          "onOpenEnd": null,
+          "onOpenStart": null,
+          "opacity": 0.5,
+          "outDuration": 250,
+          "preventScrolling": true,
+          "startingTop": "4%",
+        }
+      }
+      trigger={
+        <a
+          className="waves-effect btn button-design"
+          data-target="passwordModal"
+          id="delete-role"
+        >
+          Delete
+        </a>
+      }
+    >
+      <div>
+        <h5
+          className="center"
+        >
+          Are you sure you want to delete the user
+        </h5>
+      </div>
+    </Modal>
+  </div>
+  <div
+    className="col l6 m6 s12 right"
+  >
+    <Modal
+      actions={
+        <div>
+          <button
+            className="btn btn-flat modal-action modal-close"
+            id="update"
+            name={3}
+            onClick={[MockFunction]}
+            type="submit"
+          >
+            Update
+          </button>
+          <button
+            className="btn btn-flat modal-action modal-close left"
+          >
+            Cancel
+          </button>
+        </div>
+      }
+      bottomSheet={false}
+      fixedFooter={false}
+      id="modal-1"
+      options={
+        Object {
+          "dismissible": true,
+          "endingTop": "10%",
+          "inDuration": 250,
+          "onCloseEnd": null,
+          "onCloseStart": null,
+          "onOpenEnd": null,
+          "onOpenStart": null,
+          "opacity": 0.5,
+          "outDuration": 250,
+          "preventScrolling": true,
+          "startingTop": "4%",
+        }
+      }
+      trigger={
+        <a
+          className="waves-effect btn button-design"
+          data-target="passwordModal"
+          id="update-role"
+        >
+          Update
+        </a>
+      }
+    >
+      <div>
+        <h5>
+          Update Role
+        </h5>
+        <InputField
+          className="validate form-design"
+          name="title"
+          onChange={[MockFunction]}
+          placeholder="Book"
+          type="text"
+        />
+        <InputField
+          className="validate form-design"
+          name="description"
+          onChange={[MockFunction]}
+          placeholder="Awesome"
+          type="text"
+        />
+      </div>
+    </Modal>
+  </div>
+</div>
+`;

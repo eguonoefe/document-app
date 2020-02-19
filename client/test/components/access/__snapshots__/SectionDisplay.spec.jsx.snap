@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionDisplay Component should match the sectiondisplay snapshot 1`] = `
+<div
+  className="section"
+>
+  <div
+    className="carousel carousel-slider center"
+    data-indicators="true"
+  >
+    <div
+      className="carousel-fixed-item"
+    >
+      <span
+        className="inner-slide"
+      >
+        <img
+          alt="slide1"
+          className="slide-img"
+          src="../../img/slide5.jpg"
+        />
+      </span>
+      <div
+        className="landing-content"
+      >
+        <h2>
+          DocNinja
+        </h2>
+        <Link
+          to="/signup"
+        >
+          Get Started
+        </Link>
+      </div>
+    </div>
+    <div
+      className="carousel-item white-text"
+      href="#one!"
+    >
+      <img
+        alt="slide"
+        className="slide-img"
+        src="../../img/slide6.jpg"
+      />
+    </div>
+    <div
+      className="carousel-item amber white-text"
+      href="#two!"
+    >
+      <img
+        alt="slide3"
+        className="slide-img"
+        src="../../img/slide1.jpg"
+      />
+    </div>
+    <div
+      className="carousel-item green white-text"
+      href="#three!"
+    >
+      <img
+        alt="slide4"
+        className="slide-img"
+        src="../../img/slide4.jpg"
+      />
+    </div>
+    <div
+      className="carousel-item blue white-text"
+      href="#four!"
+    >
+      <img
+        alt="slide3"
+        className="slide-img"
+        src="../../img/slide3.jpg"
+      />
+    </div>
+  </div>
+</div>
+`;

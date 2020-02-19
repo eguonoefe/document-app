@@ -1,0 +1,96 @@
+{
+  "name": "document-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production babel-node -- index.js",
+    "dev": "NODE_ENV=development nodemon --watch server --exec babel-node -- index.js",
+    "build": "webpack --config ./webpack.config.prod.js --progress --colors --watch",
+    "test": "jest --coverage client/test",
+    "test:update": "jest --updateSnapshot client/test",
+    "test:e2e": "./node_modules/.bin/nightwatch"
+  },
+  "jest": {
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "globals": {
+      "window": true
+    },
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom"
+    ],
+    "setupFiles": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eguonoefe/document-app.git"
+  },
+  "author": "Eguonoghene Efekemo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eguonoefe/document-app/issues"
+  },
+  "homepage": "https://github.com/eguonoefe/document-app#readme",
+  "devDependencies": {
+    "babel-jest": "^25.1.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^25.1.0",
+    "nightwatch": "^1.3.4",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "colors": "^1.1.2",
+    "compression": "^1.7.0",
+    "css-loader": "^3.4.2",
+    "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.4.4",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.15.3",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jest-cli": "^25.1.0",
+    "jquery": "^3.2.1",
+    "jsdom": "^16.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "morgan": "^1.8.2",
+    "moxios": "^0.4.0",
+    "node-sass": "^4.5.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-html-parser": "^2.0.2",
+    "react-materialize": "^3.5.9",
+    "react-paginate": "^6.3.2",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-router-redux": "^4.0.8",
+    "react-test-renderer": "^16.12.0",
+    "react-tinymce": "^0.7.0",
+    "redux": "^4.0.5",
+    "redux-mock-store": "^1.2.3",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^8.0.2",
+    "sinon": "^8.1.1",
+    "style-loader": "^1.1.3",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.6",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.18.0"
+  }
+}
