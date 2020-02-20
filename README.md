@@ -1,19 +1,10 @@
 ## Document Management System
 
-[![Build Status](https://travis-ci.org/eguonoefe/DMS.svg?branch=staging)](https://travis-ci.org/andela-eefekemo/DMS)
-[![Code Climate](https://codeclimate.com/github/andela-eefekemo/DMS/badges/gpa.svg)](https://codeclimate.com/github/andela-efeekemo/DMS)
-[![Coverage Status](https://coveralls.io/repos/github/andela-eefekemo/DMS/badge.svg?branch=master)](https://coveralls.io/github/andela-eefekemo/DMS?branch=master)
+Document Management System provides a system for users to create and manage documents giving different privileges based on user roles and managing authentication using JWT.
 
-Document Management System provides a restful API for users to create and manage documents giving different privileges based on user roles and managing authentication using JWT.
+#### Application Features
 
-## API Documentation
-The API has routes, each dedicated to a single task that uses HTTP response codes to indicate API status and errors.
-## API Summary
-View full API documentation [here](https://doc-ninja.herokuapp.com/api-docs)
-
-#### API Features
-
-The following features make up the Document Management System API:
+The following features make up the Document Management System:
 
 ###### Authentication
 
@@ -53,33 +44,14 @@ The following features make up the Document Management System API:
 - It allows users to search for users through name or email address
 - It allows users on the same role to search through role-based documents 
 
-## Technologies Used
-- **[JavaScript ES6](http://es6-features.org/)** - Codes were written in javascript to enhance HTML pages.
-- **[ReactJS](https://facebook.github.io/react/)** - React is an open-source JavaScript library for building user interfaces.
-- **[NodeJS](https://nodejs.org/)** - Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
-- **[ExpressJS](https://expressjs.com/)** - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. I used this framework for routing.
-- **[PostgreSQL](https://www.postgresql.org/)** - Postgres is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards compliance.
-- **[Sequelize](http://docs.sequelizejs.com/)** - Sequelize is a promise-based ORM for Node.js which supports the dialects of PostgreSQL and features solid transaction support, relations, read replication and more.
-
 ### **Installation Steps**
-* Ensure you have `node` installed or install [Node](https://nodejs.org/en/download/)
-* Clone the project repository from your terminal `git clone https://github.com/andela-eefekemo/DMS.git`
-* Change directory into the `document-mgt-system` directory
-* Run `npm install` to install the dependencies in the `package.json` file
-* Run `npm run dev` to start the project
-* Run `npm test` to run the server-side(api) tests
-* Run `npm run client:test` to run the client-side(React) tests
-* Use [Postman](https://www.getpostman.com/) or any API testing tool of your choice to access the endpoints
-
-### **Endpoints**
-**N/B:** For all endpoints that require authentication, use \
-`Authorization: <token>`
-
-#### Limitations:
-The limitations to the **Document Management System API** are as follows:
-* Users can only create plain textual documents and retrieve same when needed 
-* Users cannot share documents with people, but can make document `public` to make it available to other users
-* Users login and obtain a token which is verified on every request, but users cannot logout (nullify the token), however tokens become invalid when it expires
+* Clone the repository
+* Create a `.env` file from the example file `.env.example`
+* Ensure you have `docker` installed on your local machine. You can check this by running `docker --version`
+* Run `docker-compose build` to build the service images
+* Run `docker-compose up` to start up the containers for the services
+* Open application locally on `localhost:5000`
+* To remove volume and container run `docker-compose down`
 
 ### How to Contribute
 Contributors are welcome to further enhance the features of this API by contributing to its development. The following guidelines should guide you in contributing to this project:
